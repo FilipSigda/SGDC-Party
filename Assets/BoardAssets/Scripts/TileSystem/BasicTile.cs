@@ -8,8 +8,8 @@ public class BasicTile : TileClass
     public override GameObject[] nextTile { get { return initNextTile; } }
     public override GameObject[] previousTile { get { return initPreviousTile; } }
 
+    public Vector3 initBezierOffset;
+    public override Vector3 bezierOffset { get { return initBezierOffset; } }
+
     public bool tileOccupied = false;
-    
-
-
 }
